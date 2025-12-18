@@ -1,4 +1,4 @@
-import process from "./main";
+import { process } from "./main";
 import { TelegramProcessor } from "./processors/telegram.processor";
 
 export function test() {
