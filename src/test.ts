@@ -24,6 +24,8 @@ export function test() {
 <code>code</code>
 <ms>monospace</ms>
 
+<b>\\<\\<\\< shielding \\>\\>\\></>
+
 <b><i>bold-italic</i></b>
 <only tg>
 only for telegram post</only><only vk>

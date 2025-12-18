@@ -23,14 +23,24 @@ export function process(text: string, processor: TagProcessor) {
 
   let state: string = "text";
   let closingTag: boolean = false;
+  let shielded: boolean = false;
   for (let s of text) {
     const current = currentTags.at(-1);
 
     switch (state) {
       case "text":
-        if (s === "<") {
-          state = "tagBrackets";
-          break;
+        if (!shielded) {
+          if (s === "\\") {
+            shielded = true;
+            break;
+          }
+
+          if (s === "<") {
+            state = "tagBrackets";
+            break;
+          }
+        } else {
+          shielded = false;
         }
 
         if (current) {
