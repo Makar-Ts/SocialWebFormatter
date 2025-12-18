@@ -12,4 +12,9 @@ export { TelegramProcessor } from './processors/telegram.processor';
 export { VKProcessor } from './processors/vk.processor';
 export { DiscordProcessor } from './processors/discord.processor';
 
+import SupportedTags from './constant/supported-tags.constant';
+import ProcessTagInput from './interfaces/process-tag-input.interface';
+export { SupportedTags };
+export type { ProcessTagInput };
+
 export { test } from './test';
