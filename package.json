@@ -1,0 +1,47 @@
+{
+  "name": "social-web-formatter",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "node dist/test.js",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist"
+  },
+  "author": {
+    "name": "Makar Ts",
+    "url": "https://github.com/Makar-Ts"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Makar-Ts/SocialWebFormatter"
+  },
+  "homepage": "https://github.com/Makar-Ts/SocialWebFormatter#readme",
+  "bugs": {
+    "url": "https://github.com/Makar-Ts/SocialWebFormatter/issues"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
