@@ -1,3 +1,8 @@
+/**
+ * Enum representing supported HTML-like tags for social media formatting
+ * @enum {string}
+ * @readonly
+ */
 enum SupportedTags {
   BOLD = "b",
   ITALIC = "i",

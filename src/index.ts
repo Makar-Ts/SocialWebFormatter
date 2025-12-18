@@ -1,3 +1,10 @@
+/**
+ * SocialWebFormatter - A library for converting custom HTML-like tags
+ * into platform-specific formatting for social networks.
+ * 
+ * @packageDocumentation
+ */
+
 export type { TagProcessor } from './interfaces/tag-processor.interface';
 export { process } from './main';
 

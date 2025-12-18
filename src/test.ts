@@ -3,6 +3,17 @@ import { DiscordProcessor } from "./processors/discord.processor";
 import { TelegramProcessor } from "./processors/telegram.processor";
 import { VKProcessor } from "./processors/vk.processor";
 
+/**
+ * Test function demonstrating the library's capabilities
+ * 
+ * Shows example input and outputs for all supported platforms
+ * 
+ * @example
+ * ```typescript
+ * test();
+ * // Logs formatted outputs for Telegram, Discord, and VK
+ * ```
+ */
 export function test() {
   const input = `
 <b>bold</b>

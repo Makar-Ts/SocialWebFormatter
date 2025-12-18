@@ -1,5 +1,18 @@
 import { TagProcessor } from "./interfaces/tag-processor.interface";
 
+/**
+ * Parses and processes custom HTML-like tags in text using the provided processor
+ * 
+ * @param {string} text - Input text containing custom tags
+ * @param {TagProcessor} processor - Platform-specific tag processor
+ * @returns {string} Text with tags converted to platform-specific formatting
+ * 
+ * @example
+ * ```typescript
+ * const result = process("<b>bold</b> text", new DiscordProcessor());
+ * // result: "**bold** text"
+ * ```
+ */
 export function process(text: string, processor: TagProcessor) {
   text = processor.start(text);
 

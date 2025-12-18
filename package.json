@@ -1,6 +1,6 @@
 {
   "name": "social-web-formatter",
-  "version": "0.1.1",
+  "version": "0.3.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
